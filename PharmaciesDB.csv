@@ -1,0 +1,170 @@
+0,title,rating,category,address,website,phoneNumber,monday,tuesday,wednesday,thursday,friday,saturday,sunday,latitude,longitude
+1,Remedium Lek,null,Pharmacy,Skopje,null,+389 2 307 1105,7:30AM-9PM,7:30AM-9PM,7:30AM-9PM,7:30AM-9PM,7:30AM-9PM,8AM-4PM,Closed,42.0023125,21.4090625
+2,Zegin - Ruzveltova,null,Pharmacy,Franklin Ruzvelt 68 ,zegin.com.mk,+389 2 321 7050,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-4PM,7AM-10PM,42.0035625,21.4153125
+3,Efedra,5,Pharmacy,Orce Nikolov 150 ,zk.mk,+389 2 306 7500,7:30AM-8PM,7:30AM-8PM,7:30AM-8PM,7:30AM-8PM,7:30AM-8PM,8AM-5PM,Closed,42.0044375,21.4150625
+4,Zegin - Leptokarija,3,Pharmacy,Skopje,zegin.com.mk,+389 2 306 5903,null,null,null,null,null,null,null,42.0034375,21.3971875
+5,Makmedika,null,Pharmacy,Veselin Maslesha,null,null,null,null,null,null,null,null,null,42.0034375,21.4075625
+6,Eurofarm - Taftalidzhe,4.7,Pharmacy,Ulica Moskovska,eurofarm.com.mk,+389 2 551 4580,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,42.0009375,21.3903125
+7,Ambrozija Farm,5,Pharmacy,Bulevar Partizanski Odredi ,null,+389 2 322 4399,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,9AM-5PM,Closed,42.0005625,21.4151875
+8,Zegin,3.9,Pharmacy,Bulevar Partizanski Odredi,zegin.com.mk,+389 2 329 8504,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,Closed,42.0005625,21.4151875
+9,Zegin,4.5,Pharmacy,Bulevar Partizanski Odredi ,zegin.com.mk,+389 2 306 5903,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-9PM,42.0033125,21.3979375
+10,Zegin - Moja Apteka,4.7,Pharmacy,Ivan Agovski 7,zegin.com.mk,+389 2 308 9997,8AM9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-4PM,42.0025625,21.4114375
+11,Viola,4.3,Pharmacy,Bulevar Partizanski Odredi ,viola.com.mk,+389 2 307 7981,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,Closed,42.0030625,21.4011875
+12,Trajko Pharma,4.7,Pharmacy,Bukureska 8,null,null,9AM-5PM,9AM-5PM,9AM-5PM,9AM-5PM,Closed,Closed,9AM-5PM,42.0004375,21.3969375
+13,Beta Pharmacia,5,Pharmacy,Franklin Ruzvelt 28/1 Lokal 2 ,null,+389 2 325 6799,null,null,null,null,null,null,null,41.9999375,21.4131875
+14,Akacija,5,Pharmacy,Kozle 88,zk.mk,+389 2 308 6106,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-8PM,Closed,41.9950625,21.3955625
+15,Makfarm,null,Pharmacy,Veselin Maslesha,null,null,null,null,null,null,null,null,null,42.0034375,21.4075625
+16,Panterfarm,null,Pharmacy,Centar ,null,null,null,null,null,null,null,null,null,42.0011875,21.4201875
+17,Derma Pharm,4.4,Pharmacy,John Kennedy 25/7 ,null,+389 2 263 4071,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,42.0128125,21.4334375
+18,Eurofarm,5,Pharmacy,Orce Nikolov 133 ,null,+389 2 312 0555,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,42.0028125,21.4183125
+19,Metamedico,null,Pharmacy,Borka Talevski 15 Lokal 5 ,metamedico.mk,+389 70 204 202,null,null,null,null,null,null,null,41.9974375,21.4195625
+20,Zegin,4,Pharmacy,Kemal Sejfula 1/1-4,null,+389 2 265 6005,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-4PM,42.0203125,21.4431875
+21,Zegin - Bunjakovec,4.6,Pharmacy,Aminta Treti Centar ,zegin.com.mk,+389 2 329 8504,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,41.9985625,21.4228125
+22,Zegin - Karposh 4,5,Pharmacy,Skopje,zegin.com.mk,+389 2 306 4330,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-4PM,42.0049375,21.3835625
+23,Zegin - Taftalidze,4.5,Pharmacy,Ulica Moskovska ,zegin.com.mk,+389 2 306 4161,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-4PM,42.0018125,21.3895625
+24,Beta Pharmacia,null,Pharmacy,Ivan Milutinovikj 24 ,null,null,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,Closed,41.9985625,21.4155625
+25,Pavlofarm,null,Pharmacy,29-ti Noemvri Centar ,null,null,null,null,null,null,null,null,null,42.0008125,21.4181875
+26,Zegin - Mlechen Restoran,3.8,Pharmacy,Mitropolit Teodosij Gologanov ,zegin.com.mk,+389 2 307 8681,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,9AM-4PM,9AM-2PM,41.9961875,21.4076875
+27,Alpifarm,null,Pharmacy,Skopje,null,null,null,null,null,null,null,null,null,42.0016875,21.3905625
+28,Carpediem,null,Pharmacy,John Kennedy 11Ð?/1 local 6 ,null,+389 2 262 2022,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,42.0130625,21.4373125
+29,Zegin Alumina,5,Pharmacy,Mitropolit Teodosij Gologanov,zegin.com.mk,+389 2 306 4852,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-4PM,41.9975625,21.3974375
+30,AL-NE Farmacy,null,Pharmacy,Kemal Ataturk 75 ,instagram.com,null,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,9AM-11PM,42.0135625,21.4431875
+31,Datel Farma,null,Pharmacy,Skopje,null,+389 2 261 2536,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-8PM,9:30AM-2:30PM,42.0159375,21.4344375
+32,Remedium,5,Pharmacy,Nikola Parapunov ,null,null,null,null,null,null,null,null,null,42.0061875,21.3816875
+33,Omega,null,Pharmacy,Aminta Treti 44 ,null,null,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-6PM,Closed,41.9983125,21.4225625
+34,LifeLine Pharmacy,1,Pharmacy,Pariska 15 ,apteka-lifeline.business.site,+389 70 217 128,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,42.0005625,21.4008125
+35,Eurofarm Debar Maalo,null,Pharmacy,Orce Nikolov ,null,null,null,null,null,null,null,null,null,42.0021875,21.4199375
+36,Skopje,null,Pharmacy,Vostanicka 9e ,null,null,null,null,null,null,null,null,null,41.9855625,21.4249375
+37,Zegin Orthopedic,null,Pharmacy,Chair ,zegin.com.mk,+389 2 232 5421,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,8AM-2PM,Closed,41.9914375,21.4368125
+38,Eurofarm,null,Pharmacy,Bulevar Partizanski Odredi 25/2 ,eurofarm.com.mk,+389 2 311 1410,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-2PM,41.9986875,21.4220625
+39,Eurofarm,4.5,Pharmacy,Skopje,eurofarm.com.mk,+389 2 311 1522,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,42.0028125,21.4009375
+40,Ambrozija Farm,5,Pharmacy,Bulevar Partizanski Odredi ,null,+389 2 322 4399,null,null,null,null,null,null,null,42.0005625,21.4151875
+41,Inter-Evrogeneks Pharmaceutical Industry,5,Pharmacy,Nikola Vapcarov 20 ,interevrogeneks.com,+389 2 321 5800,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,41.9950625,21.4290625
+42,Eurofarm - Vero 2,4,Pharmacy,Mitropolit Teodosij Gologanov ,eurofarm.com.mk,+389 3078677,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-2PM,41.9970625,21.4051875
+43,Viola Bunjakovec,4.5,Pharmacy,Partizanski odredi 29/5 ,viola.com.mk,+389 2 311 7814,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,8AM-10PM,Closed,41.9988125,21.4206875
+44,BILNA APTEKA & ZDRAVA HRANA,5,Pharmacy,29-ti Noemvri Centar ,bio-herb.org,+389 78 255 369,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,42.0010625,21.4181875
+45,Pharmacy Zegin,4.5,Pharmacy,Skopje,null,null,10AM-9PM,10AM-9PM,10AM-9PM,10AM-9PM,10AM-9PM,10AM-9PM,10AM-4PM,41.9975625,21.3975625
+46,Oskar Lek,4.5,Pharmacy,Bulevar Ilinden 48 ,oskarlek.mk,+389 2 313 2227,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,42.0008125,21.4263125
+47,Zegin Kapishtec,4.3,Pharmacy,Vasil Gjorgov Del 5-1 Kat 1 ,zegin.com.mk,+389 2 321 6519,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-4PM,41.9933125,21.4154375
+48,Lotos Pharm,null,Pharmacy,Bulevar Sveti Kliment Ohridski ,null,+389 2 321 3315,null,null,null,null,null,null,null,41.9979375,21.4250625
+49,Viola Kapishtec,3.2,Pharmacy,Vasil Gjorgov 1 ,viola.com.mk,+389 2 315 1977,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,Closed,41.9928125,21.4160625
+50,Zegin - Medika,3,Pharmacy,Naroden Front 5/4-2 ,zegin.com.mk,+389 2 321 5600,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-9PM,8AM-9PM,41.9928125,21.4204375
+51,Zegin - John Kennedy,4,Pharmacy,Skopje,zegin.com.mk,+389 2 261 8986,null,null,null,null,null,null,null,42.0133125,21.4393125
+52,Zegin - Bit Pazar,4.8,Pharmacy,Skopje,zegin.com.mk,+389 2 329 8734,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-9PM,42.0024375,21.4394375
+53,Zegin - Kozle,4,Pharmacy,Kozle ,zegin.com.mk,+389 2 307 1587,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-4PM,41.9949375,21.3944375
+54,Herba,null,Pharmacy,Skopje,null,null,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,Closed,8AM-8PM,10AM-5PM,42.0211875,21.4446875
+55,Zegin - Centar,null,Pharmacy,Dimitrija Chupovski ,zegin.com.mk,+389 2 312 2225,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-4PM,41.9954375,21.4273125
+56,Makmedika,4.2,Pharmacy,Bulevar Partizanski Odredi 149 ,null,+389 2 203 1082,8:30AM-9:30PM,8:30AM-9:30PM,8:30AM-9:30PM,8:30AM-9:30PM,8:30AM-9:30PM,8:30AM-9:30PM,9AM-1PM,42.0073125,21.3681875
+57,Zegin,4.3,Pharmacy,Bulevar Sveti Kliment Ohridski,zegin.com.mk,+389 2 311 8388,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,9AM-5PM,Closed,41.9995625,21.4265625
+58,Zegin - Gradska bolnica,4.6,Pharmacy,Skopje,zegin.com.mk,+389 2 313 6280,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,41.9929375,21.4343125
+59,Zegin - Moja Apteka,null,Pharmacy,Mitropolit Teodosij Gologanov,null,null,null,null,null,null,null,null,null,41.9959375,21.4070625
+60,Varufarm Inter-Evrogenex,5,Pharmacy,Majka Tereza 18 ,interevrogeneks.com,+389 2 317 7922,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,41.9910625,21.4211875
+61,Moja apteka,null,Pharmacy,Skopje,null,null,null,null,null,null,null,null,null,42.0278125,21.4054375
+62,Apteka Life Skopje,5,Pharmacy,Bulevar Kocho Racin 7 ,null,+389 2 551 3555,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-6PM,Closed,41.9915625,21.4375625
+63,Zegin - GTC1,3,Pharmacy,Skopje,zegin.com.mk,+389 2 329 8980,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,8AM-6PM,Closed,41.9944375,21.4344375
+64,Biofit - Kozle,5,Pharmacy,Kozle 44 ,zk.mk,+389 2 308 2246,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-2PM,Closed,41.9940625,21.4009375
+65,Lafoma Alkaloid,5,Pharmacy,Skopje,null,null,null,null,null,null,null,null,null,42.0125625,21.3655625
+66,Gea - Vodnjanska,null,Pharmacy,Elisie Popovski Marko 1 ,null,null,9AM-3PM,9AM-3PM,9AM-3PM,9AM-3PM,9AM-3PM,Closed,Closed,41.9904375,21.4205625
+67,Natural Company,null,Pharmacy,Dimitrie Chupovski 23,null,null,null,null,null,null,null,null,null,41.9945625,21.4289375
+68,Galenium pharm,null,Pharmacy,Vasil Gjorgov ,null,null,null,null,null,null,null,null,null,41.9928125,21.4171875
+69,Viola - Centar,3.2,Pharmacy,Dimitrie Chupovski ,viola.com.mk,+389 2 312 5155,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,8AM-10PM,Closed,41.9955625,21.4265625
+70,Zegin - Cvetan Dimov,1,Pharmacy,Cvetan Dimov ,null,null,null,null,null,null,null,null,null,42.0108125,21.4445625
+71,Herbal Pharmacy,4.5,Pharmacy,11-ti Oktomvri 46 ,alkaloid.com.mk,+389 2 323 7975,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,8AM-12PM,8AM-12PM,41.9885625,21.4359375
+72,Alpi Farm 1,5,Pharmacy,Vtora Makedonska Brigada ,null,null,7:30AM-8PM,7:30AM-8PM,7:30AM-8PM,7:30AM-8PM,7:30AM-8PM,8AM-8PM,Closed,42.0226875,21.4330625
+73,Betty,null,Pharmacy,Mitropolit Teodosij Gologanov,null,+389 2 322 0049,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-6PM,Closed,41.9951875,21.4230625
+74,Zegin - Vodno,4.3,Pharmacy,Vladimir Nazor ,zegin.com.mk,+389 2 310 9228,8AM-6PM,8AM-6PM,8AM-6PM,8AM-6PM,8AM-6PM,8AM-6PM,8AM-9PM,41.9901875,21.4201875
+75,Zegin - Butel 1,4.3,Pharmacy,Aleksandar Urdarevski ,zegin.com.mk,+389 2 263 8742,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-9PM,42.0320625,21.4450625
+76,Buharishop,null,Pharmacy,Cvetan Dimov 51 ,null,+389 71 823 351,10AM-7PM,10AM-7PM,10AM-7PM,10AM-7PM,10AM-7PM,10AM-7PM,Closed,42.0103125,21.4439375
+77,Viola - Vodno,3,Pharmacy,Vodnjanska 28b ,viola.com.mk,+389 2 317 6444,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-10PM,7:30AM-8PM,Closed,41.9899375,21.4196875
+78,Apteka Vita Farm,5,Pharmacy,John Kennedy 25 ,null,+389 2 263 9000,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,42.0129375,21.4356875
+79,DNA Anni Farm - Hrom,4.8,Pharmacy,Isaija Mazovski 44 ,annifarm.mk,+389 2 204 4287,7AM-8PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-3PM,Closed,42.0064375,21.3678125
+80,Eurofarm - Ramstore,3.7,Pharmacy,Ulica Mito Hadzivasilev Jasmin,eurofarm.com.mk,+389 2 329 6114,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,41.9918125,21.4273125
+81,Eurofarm,null,Pharmacy,Bulevar Mitropolit Teodosij Gologanov 49 ,null,null,null,null,null,null,null,null,null,41.9948125,21.4213125
+82,Eurofarm,4.5,Pharmacy,50-ta Devizija ,eurofarm.com.mk,+389 2 310 7800,6AM-10PM,6AM-10PM,6AM-10PM,6AM-10PM,6AM-10PM,8AM-2PM,Closed,41.9903125,21.4254375
+83,Marija,null,Pharmacy,Gjorche Petrov ,null,+389 2 203 6508,null,null,null,null,null,null,null,42.0064375,21.3520625
+84,Family Pharmacy,5,Pharmacy,Krste Arsenov 3,null,null,null,null,null,null,null,null,null,42.0171875,21.4450625
+85,Eurofarm,4.8,Pharmacy,Mirce Acev 2 ,eurofarm.com.mk,+389 2 320 9696,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,41.9936875,21.4360625
+86,Datel Farma,null,Pharmacy,Blagoje Parovikj Stara Devetka,null,+389 2 261 2536,null,null,null,null,null,null,null,42.0159375,21.4344375
+87,Betty,2,Pharmacy,Bulevar Krste Petkov Misirkov 13 ,null,null,null,null,null,null,null,null,null,42.0011875,21.4395625
+88,Eurofarm - Vero Centar,3.5,Pharmacy,Bulevar Kocho Racin ,eurofarm.com.mk,+389 2 310 0400,9AM-10PM,9AM-10PM,9AM-10PM,9AM-10PM,9AM-10PM,9AM-10PM,9AM-10PM,41.9931875,21.4416875
+89,Berna Farm,3,Pharmacy,Cvetan Dimov,null,null,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,42.0121875,21.4453125
+90,Gold min 7,null,Pharmacy,Vtora Makedonska Brigada,null,null,null,null,null,null,null,null,null,42.0220625,21.4368125
+91,Sara Farm,4.3,Pharmacy,Boris Trajkovski ,m.facebook.com,+389 2 277 8709,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-6PM,Closed,41.9829375,21.4394375
+92,Eurofarm,4.3,Pharmacy,Anton Popov 5 ,eurofarm.com.mk,+389 2 551 4501,null,null,null,null,null,null,null,41.9871875,21.4331875
+93,Zegin - Sv.Petka,4,Pharmacy,Boris Trajkovski ,zegin.com.mk,+389 2 277 2086,7AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-4PM,41.9851875,21.4376875
+94,Eurofarm,null,Pharmacy,Maksim Gorki 8 ,aptekieurofarm.com.mk,+389 2 311 1522,8-9AM,8-9AM,8-9AM,8-9AM,8-9AM,8:30AM-8:30AM,Closed,41.9959375,21.4296875
+95,Zegin - Centar 2,5,Pharmacy,Bulevar Sveti Kliment Ohridski 63,zegin.com.mk,+389 2 312 5832,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-5PM,Closed,41.9953125,21.4248125
+96,Zemjodelska Apteka - Rampa Kisela Voda,5,Pharmacy,11-ti Oktomvri ,null,+389 75 458 086,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-4PM,8AM-4PM,41.9873125,21.4368125
+97,Eurofarm,4.5,Pharmacy,Skopje,eurofarm.com.mk,+389 2 322 1052,null,null,null,null,null,null,null,41.9905625,21.4331875
+98,Zegin,3.7,Pharmacy,Bulevar Kuzman Josifovski Pitu ,zegin.com.mk,+389 2 246 5556,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,41.9909375,21.4461875
+99,Zegin - Shuto Orizari,4.8,Pharmacy,Skopje,zegin.com.mk,+389 2 265 6679,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,Closed,42.0408125,21.4240625
+100,Zegin - Gjorch?e Petrov 2,4.7,Pharmacy,Gjorche Petrov 60 ,zegin.com.mk,+389 2 203 7761,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-9PM,42.0065625,21.3556875
+101,Eurofarm,null,Pharmacy,11-ti Oktomvri ,eurofarm.com.mk,+389 2 316 3202,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,41.9895625,21.4360625
+102,Zegin - Kisela Voda 1,4.3,Pharmacy,Boris Trajkovski ,zegin.com.mk,+389 2 272 4174,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,41.9806875,21.4414375
+103,Biofit - Kisela Voda,5,Pharmacy,Vostanichka 48 ,null,+389 2 273 5010,null,null,null,null,null,null,null,41.9835625,21.4295625
+104,Apteka Artemizia,null,Pharmacy,Vidoe Smilevski Bato 9 ,null,+389 2 243 0690,null,null,null,null,null,null,null,41.9823125,21.4739375
+105,Zegin - Avtokomanda 1,4.5,Pharmacy,Jani Lukrovski 2 ,zegin.com.mk,+389 2 312 2060,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-9PM,42.0016875,21.4608125
+106,Viola 24/7,4.7,Pharmacy,Bulevar Jane Sandanski ,viola.com.mk,+389 2 246 6103,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,Open 24 hours,41.9878125,21.4528125
+107,Eurolek,null,Pharmacy,Vizbegovo,null,null,8AM-4AM,8AM-4AM,8AM-4AM,8AM-4AM,8AM-4AM,Closed,Closed,42.0353125,21.4015625
+108,Zegin - MIA,4.2,Pharmacy,Bihacka ,zegin.com.mk,null,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-4PM,41.9869375,21.4308125
+109,Vivalek,3.5,Pharmacy,Skopje,null,+389 2 261 7740,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-8PM,Closed,42.0115625,21.4594375
+110,Molika,null,Pharmacy,Arhitekt Nikola Dobrovik 1 ,null,null,null,null,null,null,null,null,null,41.9790625,21.4449375
+111,Andrea Lek,5,Pharmacy,11-ti Oktomvri,null,null,null,null,null,null,null,null,null,41.9873125,21.4368125
+112,Capa,null,Pharmacy,Boris Trajkovski 2 ,null,null,null,null,null,null,null,null,null,41.9829375,21.4395625
+113,Zegin - Kisela Voda,3,Pharmacy,Ivan Kozarov ,null,null,null,null,null,null,null,null,null,41.9829375,21.4388125
+114,Datel Farma,null,Pharmacy,Vangel Todorovski 5 ,lm.facebook.com,+389 2 512 6554,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-8PM,9AM-2:30PM,41.9846875,21.4546875
+115,Zegin - Tobaco,4.9,Pharmacy,Bulevar Jane Sandanski ,zegin.com.mk,+389 2 246 3239,7AM-12AM,7AM-12AM,7AM-12AM,7AM-12AM,7AM-12AM,8AM-12AM,8AM-10PM,41.9878125,21.4533125
+116,Aloe,null,Pharmacy,Gjorche Petrov 40,null,+389 2 203 9915,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,8AM-9:30PM,9AM-3PM,42.0069375,21.3601875
+117,Zegin - Vlae,4.7,Pharmacy,Gjorche Petrov ,zegin.com.mk,+389 2 306 4330,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,42.0071875,21.3681875
+118,Veterinary Hospital,4.1,Veterinary pharmacy,Skopje,null,+389 2 311 5756,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,7AM-8PM,9AM-5PM,42.0033125,21.4594375
+119,Zegin,4,Pharmacy,Hristijan Todorovski ,null,null,null,null,null,null,null,null,null,42.0206875,21.4478125
+120,Eurofarm,null,Pharmacy,11-ti Oktomvri,eurofarm.com.mk,+389 2 322 1052,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-2PM,41.9919375,21.4339375
+121,Zegin - Kisela Voda 2,4.7,Pharmacy,Hristo Tatarchev ,zegin.com.mk,+389 2 277 1559,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-9PM,41.9755625,21.4439375
+122,Lincura,5,Pharmacy,Skopje,null,null,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,Closed,Closed,41.9865625,21.4781875
+123,Makmedica,5,Pharmacy,Skopje,null,+389 2031082,8:30AM-9:45PM,8AM-9:45PM,8AM-9:45PM,8AM-9:45PM,8AM-9:45PM,8AM-9:45PM,8:30AM-1:30PM,42.0071875,21.3688125
+124,Zegin - Capitol,4.5,Pharmacy,Skopje,zegin.com.mk,+389 2 245 5892,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,Closed,41.9869375,21.4668125
+125,Zegin - Novo Lisiche,4.3,Pharmacy,Skopje,zegin.com.mk,+389 2 240 3213,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-9PM,8AM-4PM,41.9820625,21.4736875
+126,Eurofarm - Volkovo,5,Pharmacy,Volkovo,null,null,8AM-8:30PM,8AM-8:30PM,8AM-8:30PM,8AM-8:30PM,8AM-8:30PM,8AM-8:30PM,8AM-2:30PM,42.0379375,21.3488125
+127,Zegin - Biser,4.8,Pharmacy,Bulevar Jane Sandanski 24 Lokal 6 ,zegin.com.mk,+389 2 240 3237,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-4PM,41.9870625,21.4626875
+128,Zegin - Dame Gruev,4.2,Pharmacy,Luka Gerov,zegin.com.mk,+389 2 205 0830,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,42.0164375,21.3570625
+129,Zegin - Aerodrom,4.7,Pharmacy,Bulevar Jane Sandanski 109/2 ,zegin.com.mk,+389 2 244 7722,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-9PM,8AM-9PM,41.9849375,21.4690625
+130,Medikon,null,Pharmacy,Boris Trajkovski 7 ,null,+389 2 311 3176,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,Closed,Closed,41.9703125,21.4693125
+131,DNA Anni Farm Pharmacy,5,Pharmacy,Bulevar Jane Sandanski 71 ,annifarm.mk,+389 2 244 5935,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,41.9859375,21.4664375
+132,Zegin,5,Pharmacy,Bulevar Vidoe Smilevski Bato 2a Lokal 5 ,zegin.com.mk,+389 2 245 8107,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-6PM,Closed,41.9804375,21.4724375
+133,Eurofarm - SP Planet,null,Pharmacy,Bukureska 8 ,eurofarm.com.mk,+389 2 203 1508,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-10PM,8AM-2PM,42.0069375,21.3651875
+134,Jana,null,Pharmacy,Metodija Andonov - Chento ,null,+389 2 253 3777,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-5PM,Closed,42.0015625,21.4858125
+135,Eurofarm,null,Pharmacy,Bulevar Jane Sandanski 70 ,null,null,null,null,null,null,null,null,null,41.9843125,21.4645625
+136,Zegin,4.5,Pharmacy,Bulevar Jane Sandanski 101 ,zegin.com.mk,+389 2 244 7722,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-9PM,8AM-9PM,41.9850625,21.4689375
+137,Vet Svet,5,Veterinary pharmacy,MK Nikola Trimpare 27 ,vetsvet.mk,+389 2 316 1019,null,null,null,null,null,null,null,41.9966875,21.4194375
+138,PENICILIN,null,Pharmacy,Spiro Crne 6 ,null,+389 2 253 4572,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,8AM-7PM,9AM-2PM,42.0108125,21.5101875
+139,Mediko Point Apteka,5,Pharmacy,Boris Sarafov 51,null,null,null,null,null,null,null,null,null,42.0085625,21.3499375
+140,Aliman Komerc,4.4,Veterinary pharmacy,Metodija Andonov - Chento 1b ,null,+389 2 255 0712,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,Closed,Closed,42.0023125,21.4845625
+141,Zegin - Novo Lisich?e 3,null,Pharmacy,Fevruarski Pohod 24 ,zegin.com.mk,+389 2 240 1445,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-4PM,41.9826875,21.4825625
+142,Viola,null,Pharmacy,Bulevar Jane Sandanski 69 ,null,null,null,null,null,null,null,null,null,41.9848125,21.4656875
+143,Zegin - Saraj 1,5,Pharmacy,P402 ,zegin.com.mk,+389 2 205 7356,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,8AM-11PM,41.9988125,21.3264375
+144,Apteka Opium,null,Pharmacy,Dimitar Turimandzhoski 3 ,null,+389 2 244 0335,7:30AM-9PM,7:30AM-9PM,7:30AM-9PM,7:30AM-9PM,7:30AM-9PM,8AM-8PM,Closed,41.9746875,21.4718125
+145,Eurofarm,5,Pharmacy,Fevruarski Pohod ,null,null,null,null,null,null,null,null,null,41.9841875,21.4836875
+146,Apteka Jana,null,Pharmacy,Metodija Andonov - Chento ,null,+389 2 253 3777,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-9PM,7AM-5PM,Closed,42.0064375,21.5021875
+147,Intergral Farm,5,Pharmacy,Razloshka ,null,null,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,Closed,41.9941875,21.5084375
+148,Apteka Viola - Sopishte,3,Pharmacy,Sopishte ,null,+389 2 274 3244,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,Closed,41.9486875,21.4174375
+149,LiLa,5,Pharmacy,Skopje,null,null,7AM-3PM,7AM-3PM,7AM-3PM,7AM-3PM,7AM-3PM,7AM-3PM,Closed,41.9865625,21.5075625
+150,Galenium Farm,4.8,Pharmacy,Shishevo,null,null,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,Closed,Closed,41.9738125,21.3108125
+151,Amavita,5,Pharmacy,Alija Avdovikj 18 Skopje,null,+389 76 299 022,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,8AM-10:30PM,42.0181875,21.5135625
+152,Zegin,null,Pharmacy,Blagoja Stefkovski ,null,null,null,null,null,null,null,null,null,41.9955625,21.5014375
+153,Zegin,4.9,Pharmacy,Madzari Skopje,zegin.com.mk,+389 2 252 0944,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,7AM-10PM,8AM-10PM,8AM-10PM,42.0055625,21.5035625
+154,Galafarm,4.6,Pharmaceutical company,Stopanski Dvor 51/23,galafarm.com.mk,+389 2 205 0800,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,8AM-4PM,Closed,Closed,42.0300625,21.3401875
+155,Dr. Slavjanka,null,Pharmacy,Gorno Lisiche Skopje,null,null,null,null,null,null,null,null,null,41.9615625,21.5076875
+156,Tilija 2,5,Homeopathic pharmacy,P2239 Kuchevishte,null,+389 2 262 7752,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-1PM,42.1090625,21.4200625
+157,Eurofarm,null,Pharmacy,Chento,eurofarm.com.mk,+389 72 266 541,null,null,null,null,null,null,null,42.0054375,21.5036875
+158,Aspirin Farm,null,Pharmacy,Metodija Andonov 140 Chento,null,null,null,null,null,null,null,null,null,42.0265625,21.5621875
+159,dm drogerie markt,4.7,Health and beauty shop,City Mall Ulica Ljubljanska 4,dm.mk,+389 2 308 0456,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,10AM-10PM,42.0046875,21.3916875
+160,dm drogerie markt,4.7,Health and beauty shop,Ivo Lola Ribar 74 ,dm.mk,+389 2 309 4996,9AM-9PM,9AM-9PM,9AM-9PM,9AM-9PM,9AM-9PM,9AM-9PM,10AM-5PM,41.9965625,21.4064375
+161,Flora Kompani,1,Pharmacy,Branko Zarevski Drachevo,null,+389 70 398 930,7AM-7:30PM,7AM-7:30PM,7AM-7:30PM,7AM-7:30PM,7AM-7:30PM,7AM-5PM,7AM-2PM,41.9386875,21.5155625
+162,Veterinarna Apteka Panda,2,Veterinarian,Vidoe Smilevski Bato 39 ,panda.vet,+389 70 700 784,12-7PM,12-7PM,12-7PM,12-7PM,12-7PM,10AM-2PM,Closed,41.9835625,21.4765625
+163,Zegin - Estreja Drachevo,3.3,Pharmacy,Justinijan Prvi Drachevo,zegin.com.mk,+389 2 320 1444,null,null,null,null,null,null,null,41.9333125,21.5201875
+164,Zemjodelska Apteka Agrojunikom,null,Pharmacy,Jurumleri,null,null,null,null,null,null,null,null,null,41.9678125,21.5563125
+165,Zegin - Ilinden,4.8,Pharmacy,Ilinden,null,+389 2 258 1360,null,null,null,null,null,null,null,41.9974375,21.5738125
+166,Zegin - Drachevo,4.1,Pharmacy,Zhivko Firfov Drachevo,zegin.com.mk,+389 2 279 2000,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,8AM-9PM,41.9384375,21.5149375
+167,Jasmin,4.9,Pharmacy,Marshal Tito 68 Dolno Lisiche,null,+389 2 279 4349,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-8PM,8AM-2:30PM,Closed,41.9534375,21.5323125
+168,Bilna apteka,4.3,Health food store,Victor Hugo ,bilnaapteka.com.mk,+389 2 277 4329,null,null,null,null,null,null,null,41.9859375,21.4369375
+169,Herba Stojanovi,4.8,Herb shop,11-ti Oktomvri 86/12,null,+389 2 321 4313,10AM-7PM,10AM-7PM,10AM-7PM,10AM-7PM,10AM-6PM,10AM-3PM,Closed,41.9881875,21.4359375
