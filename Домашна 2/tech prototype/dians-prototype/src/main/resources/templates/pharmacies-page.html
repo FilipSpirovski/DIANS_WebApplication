@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="prototype.css"/>
+    <title>Title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 960px;
+        }
+
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .site-header {
+            background-color: #93d8f7;
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+            color: #212529;
+        }
+
+        .site-header a {
+            color: #212529;
+            transition: ease-in-out color .15s;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .product-device {
+            position: absolute;
+            right: 10%;
+            bottom: -30%;
+            width: 300px;
+            height: 540px;
+            background-color: #333;
+            border-radius: 21px;
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+
+        .product-device::before {
+            position: absolute;
+            top: 10%;
+            right: 10px;
+            bottom: 10%;
+            left: 10px;
+            content: "";
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .product-device-2 {
+            top: -25%;
+            right: auto;
+            bottom: 0;
+            left: 5%;
+            background-color: #e5e5e5;
+        }
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+
+        .flex-equal > * {
+            -ms-flex: 1;
+            -webkit-box-flex: 1;
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                -ms-flex: 1;
+                -webkit-box-flex: 1;
+                flex: 1;
+            }
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .button1 {
+            margin-top: 38px;
+            border-radius: 19px;
+            font-size: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            width: 30%;
+
+        }
+
+        .bt1 {
+            background-color: #333;
+            color: white;
+
+        }
+
+        .diff {
+            background-color: white;
+            margin-left: 5%;
+        }
+
+        .kopce-apteka {
+            height: 77px;
+            width: 170px;
+            padding-top: 20px;
+
+        }
+
+        .kopce-zdr {
+            height: 77px;
+            width: 170px;
+        }
+
+        .kopce-zabol {
+            width: 22%;
+            color: white;
+        }
+
+        .button1:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .bt1:hover {
+            background-color: transparent;
+        }
+
+        .diff:hover {
+            background-color: transparent;
+        }
+
+        .glaven {
+            background-color: #93d8f7;
+        }
+
+        .naslov {
+            font-size: 43px;
+            animation-name: dviziInleft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        .podnaslov {
+            font-size: 35px;
+            animation-name: dviziInleft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            margin-top: 20px;
+        }
+
+        .table {
+            text-align: center;
+        }
+
+        .nav-desno {
+            margin-left: auto;
+        }
+
+        .pad-nav {
+            padding: 10px;
+        }
+
+        @keyframes dviziInleft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            80% {
+                transform: translateX(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        .no-link-color {
+            color: #333;
+        }
+
+        .detali {
+            padding-top: 40px;
+            background-color: #93d8f7;
+            padding-bottom: 40px;
+        }
+
+        .main {
+            background-color: #93d8f7;
+
+        }
+
+        .lista-element {
+            padding-top: 15px;
+        }
+
+        .kopce-detali {
+            width: 48%;
+            color: white;
+            font-size: 14px;
+        }
+
+        .back {
+            background-color: white;
+            color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row ">
+        <a class="py-2 d-none d-md-inline-block" href="/home">НАСЛОВ</a>
+        <a class="py-2 d-none d-md-inline-block nav-desno pad-nav" href="/home">Дома</a>
+        <a class="py-2 d-none d-md-inline-block pad-nav" href="/home/about-us">За нас</a>
+        <a class="py-2 d-none d-md-inline-block pad-nav" href="/home/choose-category">Пронајди</a>
+        <a class="py-2 d-none d-md-inline-block pad-nav" href="/forum">Форум</a>
+        <a class="py-2 d-none d-md-inline-block pad-nav" href="/home/contact-us">Контакт</a>
+    </div>
+</nav>
+
+<div class="container" >
+    <h1 th:if="${errorOccurred}" th:text="${error}"></h1>
+</div>
+
+<div class="container">
+    <h3 class="display-2 font-weight-normal podnaslov">Пронајдени резултати</h3>
+    <br>
+    <table class="table  table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Назив</th>
+            <th scope="col">24/7 работно време</th>
+            <th scope="col">Адреса</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><a class="no-link-color" href="/pharmacies/info?id=1">Зегин Тобако 2</a></td>
+            <td>Не</td>
+            <td>Локал 6, Булевар Јане Сандански, Скопје 1000</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Зегин Тобако 2</td>
+            <td>Не</td>
+            <td>Локал 6, Булевар Јане Сандански, Скопје 1000</td>
+        </tr>
+        <tr >
+            <th scope="row">3</th>
+            <td>Зегин Тобако 2</td>
+            <td>Не</td>
+            <td>Локал 6, Булевар Јане Сандански, Скопје 1000</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Зегин Тобако 2</td>
+            <td>Не</td>
+            <td>Локал 6, Булевар Јане Сандански, Скопје 1000</td>
+        </tr>
+        <tr >
+            <th scope="row">5</th>
+            <td>Зегин Тобако 2</td>
+            <td>Не</td>
+            <td>Локал 6, Булевар Јане Сандански, Скопје 1000</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>Зегин Тобако 2</td>
+            <td>Не</td>
+            <td>Локал 6, Булевар Јане Сандански, Скопје 1000</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Cool stuff</a></li>
+                <li><a class="text-muted" href="#">Random feature</a></li>
+                <li><a class="text-muted" href="#">Team feature</a></li>
+                <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                <li><a class="text-muted" href="#">Another one</a></li>
+                <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Resource</a></li>
+                <li><a class="text-muted" href="#">Resource name</a></li>
+                <li><a class="text-muted" href="#">Another resource</a></li>
+                <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Business</a></li>
+                <li><a class="text-muted" href="#">Education</a></li>
+                <li><a class="text-muted" href="#">Government</a></li>
+                <li><a class="text-muted" href="#">Gaming</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Team</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>
+    Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+    });
+</script>
+</body>
+</html>
