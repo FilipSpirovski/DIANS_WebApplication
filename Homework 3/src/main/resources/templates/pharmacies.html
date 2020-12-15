@@ -1,0 +1,24 @@
+<th:block xmlns:th="http://www.thymeleaf.org">
+    <div class="container">
+        <h3 class="display-2 font-weight-normal podnaslov">Пронајдени резултати</h3>
+        <br>
+        <table class="table  table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Назив</th>
+                <th scope="col">24/7 работно време</th>
+                <th scope="col">Адреса</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="pharmacy: ${pharmacies}">
+                <td>
+                    <a class="no-link-color"  th:text="${pharmacy.getTitle()}" th:href="@{'/pharmacies/{id}' (id=${pharmacy.getId()})}"></a>
+                </td>
+                <!--                <td th:text="${pharmacy.getWorkingHours() != null} ? ${pharmacy.getWorkingHours()} : 'Нема податоци'"></td>-->
+                <td th:text="${pharmacy.getAddress() != null} ? ${pharmacy.getAddress()} : 'Нема податоци'"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</th:block>
