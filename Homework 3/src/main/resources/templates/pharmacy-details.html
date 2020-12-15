@@ -14,16 +14,13 @@
                     </ul>
                     <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Назад"
                        th:href="@{'/pharmacies'}"></a>
-                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route" href="/">Пронајди пат</a>
+                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Пронајди пат</button>
                 </div>
 
                 <div class="col-md-8">
                     <div class="mapaContainer">
-                        <input type="hidden" id="latStart" value="41.985182">
-                        <input type="hidden" id="lngStart" value="21.4648353">
-                        <br />
-                        <input type="hidden" id="latEnd" value="42.0015828">
-                        <input type="hidden" id="lngEnd" value="21.497146">
+                        <input type="hidden" id="latEnd" th:value="${clinic.getLatitude()}">
+                        <input type="hidden" id="lngEnd" th:value="${clinic.getLongitude()}">
 
                         <div id="mode-selector" class="controls">
                             <input
