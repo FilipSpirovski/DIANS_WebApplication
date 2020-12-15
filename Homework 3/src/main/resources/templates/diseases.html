@@ -1,0 +1,23 @@
+<th:block xmlns:th="http://www.thymeleaf.org">
+    <div class="container">
+        <h3 class="display-2 font-weight-normal podnaslov">Пронајдени резултати</h3>
+        <br>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Назив</th>
+                <th scope="col">Опис</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="disease: ${diseases}">
+                <td>
+                    <a class="no-link-color" th:text="${disease.getName()}"
+                       th:href="@{'/diseases/{diseaseId}' (diseaseId=${disease.getId()})}"></a>
+                </td>
+                <td th:text="${disease.getDescription()}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</th:block>
