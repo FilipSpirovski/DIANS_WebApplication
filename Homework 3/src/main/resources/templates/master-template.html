@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Custom styles for this template -->
-    <!--    <link rel="stylesheet" href="prototype.css"/>-->
     <title>Title</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
@@ -238,7 +236,6 @@
             margin-top: -8%;
 
         }
-
         #map {
             height: 83%;
             width: 28%;
@@ -264,14 +261,16 @@
         }
 
         #right-panel {
+            visibility: hidden;
+            float: right;
+            width: 320px;
+            margin-right: -385px;
             font-family: "Roboto", "sans-serif";
             line-height: 30px;
             padding-left: 10px;
             height: 400px;
             overflow: scroll;
             background: white;
-            width: 320px;
-            float: right;
         }
 
         #right-panel select,
@@ -287,17 +286,6 @@
             font-size: 12px;
         }
 
-        #right-panel {
-            float: right;
-            width: 320px;
-            margin-right: -385px;
-            font-family: "Roboto", "sans-serif";
-            line-height: 30px;
-            padding-left: 10px;
-            height: 400px;
-            overflow: scroll;
-            background: white;
-        }
 
         #map {
             margin-right: 400px;
@@ -305,15 +293,6 @@
             height: 84%;
         }
 
-        #floating-panel {
-            background: #fff;
-            padding: 5px;
-            font-size: 14px;
-            font-family: Arial;
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-            display: none;
-        }
 
         @media print {
             #map {
@@ -328,6 +307,7 @@
         }
 
         #mode-selector {
+            visibility: hidden;
             position: relative;
             width: 121%;
             top: 400px;
@@ -347,22 +327,10 @@
             font-weight: 300;
         }
 
-        .adp-warnbox {
+        .adp-warnbox{
             display: none;
         }
 
-        .pink-textarea textarea.md-textarea:focus:not([readonly]) {
-            border-bottom: 1px solid #f48fb1;
-            box-shadow: 0 1px 0 0 #f48fb1;
-        }
-
-        .active-pink-textarea.md-form label.active {
-            color: #f48fb1;
-        }
-
-        .active-pink-textarea.md-form textarea.md-textarea:focus:not([readonly]) + label {
-            color: #f48fb1;
-        }
     </style>
 </head>
 <body>

@@ -1,3 +1,130 @@
+<!--<th:block xmlns:th="http://www.thymeleaf.org">-->
+<!--    <div class="main">-->
+<!--        <div class="container cont-detali">-->
+
+<!--            &lt;!&ndash; Portfolio Item Row &ndash;&gt;-->
+<!--            <div class="row detali">-->
+<!--                <div class="col-md-4">-->
+<!--                    <h3 class="my-3" th:text="${clinic.getTitle()}"></h3>-->
+<!--                    <ul>-->
+<!--                        <li class="lista-element" th:text="'Адреса: ' + ${clinic.getAddress()}">Адреса: </li>-->
+<!--                        <li class="lista-element" th:text="'Телефонски број: ' + ${clinic.getPhoneNumber()}"></li>-->
+<!--&lt;!&ndash;                        <li class="lista-element" th:text="${clinic.getWorkingHours()}">Работно време: </li>&ndash;&gt;-->
+<!--                        <li class="lista-element" th:text="'Рејтинг: ' + ${clinic.getRating()}"></li>-->
+<!--                    </ul>-->
+<!--                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Назад"-->
+<!--                       th:href="@{'/clinics'}"></a>-->
+<!--                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali" href="/">Пронајди пат</a>-->
+<!--                </div>-->
+
+<!--                <div class="col-md-8">-->
+<!--                    <div class="mapaContainer">-->
+<!--                        <input type="hidden" id="latStart" value="41.985182">-->
+<!--                        <input type="hidden" id="lngStart" value="21.4648353">-->
+<!--                        <br />-->
+<!--                        <input type="hidden" id="latEnd" value="42.0015828">-->
+<!--                        <input type="hidden" id="lngEnd" value="21.497146">-->
+
+<!--                        <div id="mode-selector" class="controls">-->
+<!--                            <input-->
+<!--                                    type="radio"-->
+<!--                                    name="type"-->
+<!--                                    id="changemode-walking"-->
+<!--                                    checked="checked"/>-->
+<!--                            <label for="changemode-walking">Walking</label>-->
+
+<!--                            <input type="radio" name="type" id="changemode-transit" />-->
+<!--                            <label for="changemode-transit">Transit</label>-->
+
+<!--                            <input type="radio" name="type" id="changemode-driving" />-->
+<!--                            <label for="changemode-driving">Driving</label>-->
+<!--                        </div>-->
+<!--                        <div id="right-panel"></div>-->
+<!--                        <div id="map"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="container">-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-sm-6">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Special title treatment</h5>-->
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Special title treatment</h5>-->
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</th:block>-->
+<!--<script>-->
+<!--    function initMap() {-->
+<!--        const directionsRenderer = new google.maps.DirectionsRenderer();-->
+<!--        const directionsService = new google.maps.DirectionsService();-->
+<!--        const map = new google.maps.Map(document.getElementById("map"), {-->
+<!--            zoom: 7,-->
+<!--            center: { lat: 41.9981, lng: 21.4254 },-->
+<!--        });-->
+<!--        directionsRenderer.setMap(map);-->
+<!--        directionsRenderer.setPanel(document.getElementById("right-panel"));-->
+
+<!--        document.getElementById("changemode-walking").addEventListener("click", () => {-->
+<!--            calculateAndDisplayRoute(directionsService, directionsRenderer, google.maps.TravelMode.WALKING);-->
+<!--        });-->
+
+<!--        document.getElementById("changemode-transit").addEventListener("click", () => {-->
+<!--            calculateAndDisplayRoute(directionsService, directionsRenderer, google.maps.TravelMode.TRANSIT);-->
+<!--        });-->
+
+<!--        document.getElementById("changemode-driving").addEventListener("click", () => {-->
+<!--            calculateAndDisplayRoute(directionsService, directionsRenderer, google.maps.TravelMode.DRIVING);-->
+<!--        });-->
+
+<!--        const mode = google.maps.TravelMode.WALKING;-->
+<!--        calculateAndDisplayRoute(directionsService, directionsRenderer, mode);-->
+
+<!--    }-->
+
+<!--    function calculateAndDisplayRoute(directionsService, directionsRenderer, mode) {-->
+<!--        const latStart = parseFloat(document.getElementById("latStart").value);-->
+<!--        const lngStart = parseFloat(document.getElementById("lngStart").value);-->
+<!--        const latEnd = parseFloat(document.getElementById("latEnd").value);-->
+<!--        const lngEnd = parseFloat(document.getElementById("lngEnd").value);-->
+
+<!--        const start = new google.maps.LatLng( latStart, lngStart);-->
+<!--        const end = new google.maps.LatLng( latEnd, lngEnd);-->
+
+<!--        directionsService.route(-->
+<!--            {-->
+<!--                origin: start,-->
+<!--                destination: end,-->
+<!--                travelMode: mode-->
+<!--            },-->
+<!--            (response, status) => {-->
+<!--                if (status === "OK") {-->
+<!--                    directionsRenderer.setDirections(response);-->
+<!--                } else {-->
+<!--                    window.alert("Directions request failed due to " + status);-->
+<!--                }-->
+<!--            }-->
+<!--        );-->
+<!--    }-->
+<!--</script>-->
+
 <th:block xmlns:th="http://www.thymeleaf.org">
     <div class="main">
         <div class="container cont-detali">
@@ -14,16 +141,13 @@
                     </ul>
                     <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Назад"
                        th:href="@{'/clinics'}"></a>
-                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali" href="/">Пронајди пат</a>
+                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Пронајди пат</a>
                 </div>
 
                 <div class="col-md-8">
                     <div class="mapaContainer">
-                        <input type="hidden" id="latStart" value="41.985182">
-                        <input type="hidden" id="lngStart" value="21.4648353">
-                        <br />
-                        <input type="hidden" id="latEnd" value="42.0015828">
-                        <input type="hidden" id="lngEnd" value="21.497146">
+                        <input type="hidden" id="latEnd" th:value="${clinic.getLatitude()}">
+                        <input type="hidden" id="lngEnd" th:value="${clinic.getLongitude()}">
 
                         <div id="mode-selector" class="controls">
                             <input
@@ -72,6 +196,7 @@
     </div>
 </th:block>
 <script>
+    var start;
     function initMap() {
         const directionsRenderer = new google.maps.DirectionsRenderer();
         const directionsService = new google.maps.DirectionsService();
@@ -82,40 +207,75 @@
         directionsRenderer.setMap(map);
         directionsRenderer.setPanel(document.getElementById("right-panel"));
 
+
+
         document.getElementById("changemode-walking").addEventListener("click", () => {
-            calculateAndDisplayRoute(directionsService, directionsRenderer, google.maps.TravelMode.WALKING);
+            calculateAndDisplayRoute(directionsService, directionsRenderer,
+                start, google.maps.TravelMode.WALKING);
         });
 
         document.getElementById("changemode-transit").addEventListener("click", () => {
-            calculateAndDisplayRoute(directionsService, directionsRenderer, google.maps.TravelMode.TRANSIT);
+            calculateAndDisplayRoute(directionsService, directionsRenderer,
+                start, google.maps.TravelMode.TRANSIT);
         });
 
         document.getElementById("changemode-driving").addEventListener("click", () => {
-            calculateAndDisplayRoute(directionsService, directionsRenderer, google.maps.TravelMode.DRIVING);
+            calculateAndDisplayRoute(directionsService, directionsRenderer,
+                start, google.maps.TravelMode.DRIVING);
         });
 
-        const mode = google.maps.TravelMode.WALKING;
-        calculateAndDisplayRoute(directionsService, directionsRenderer, mode);
+        infoWindow = new google.maps.InfoWindow();
 
+        document.getElementById("search-route").addEventListener("click", () => {
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const pos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude,
+                        };
+                        map.setCenter(pos);
+                        start = pos;
+                        calculateAndDisplayRoute(directionsService, directionsRenderer,
+                            start, google.maps.TravelMode.WALKING);
+                    },
+                    () => {
+                        handleLocationError(true, infoWindow, map.getCenter());
+                    }
+                );
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        });
     }
 
-    function calculateAndDisplayRoute(directionsService, directionsRenderer, mode) {
-        const latStart = parseFloat(document.getElementById("latStart").value);
-        const lngStart = parseFloat(document.getElementById("lngStart").value);
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(
+            browserHasGeolocation
+                ? "Error: The Geolocation service failed."
+                : "Error: Your browser doesn't support geolocation."
+        );
+        infoWindow.open(map);
+    }
+
+    function calculateAndDisplayRoute(directionsService, directionsRenderer, startPos, mode) {
         const latEnd = parseFloat(document.getElementById("latEnd").value);
         const lngEnd = parseFloat(document.getElementById("lngEnd").value);
-
-        const start = new google.maps.LatLng( latStart, lngStart);
         const end = new google.maps.LatLng( latEnd, lngEnd);
 
         directionsService.route(
             {
-                origin: start,
+                origin: startPos,
                 destination: end,
                 travelMode: mode
             },
             (response, status) => {
                 if (status === "OK") {
+                    document.getElementById("mode-selector").style.visibility = "visible";
+                    document.getElementById("right-panel").style.visibility = "visible";
                     directionsRenderer.setDirections(response);
                 } else {
                     window.alert("Directions request failed due to " + status);
