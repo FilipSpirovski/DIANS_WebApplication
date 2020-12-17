@@ -1,6 +1,18 @@
 <th:block xmlns:th="http://www.thymeleaf.org">
     <div class="container">
         <h3 class="display-2 font-weight-normal podnaslov">Пронајдени резултати</h3>
+    </div>
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="btn btn-outline-secondary button1 bt1 kopce-zabol py-2 d-none d-md-inline-block" href="#">Срцеви</a>
+        <a class="py-2 btn btn-outline-secondary button1 bt1 kopce-zabol d-none d-md-inline-block " href="#">Нервни</a>
+        <a class="py-2 btn btn-outline-secondary button1 bt1 kopce-zabol d-none d-md-inline-block " href="#">Респираторни</a>
+        <a class="py-2 btn btn-outline-secondary button1 bt1 kopce-zabol d-none d-md-inline-block "
+           href="#">Дигестивни</a>
+    </div>
+    <div class=" container active-cyan-4 mb-4" style="margin-top: 1%">
+        <input class="form-control" type="text" placeholder="Search" id="tableSearch" aria-label="Search">
+    </div>
+    <div class="container">
         <br>
         <table class="table table-hover">
             <thead>
@@ -9,7 +21,7 @@
                 <th scope="col">Опис</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="myTable">
             <tr th:each="disease: ${diseases}">
                 <td>
                     <a class="no-link-color" th:text="${disease.getName()}"
@@ -21,3 +33,13 @@
         </table>
     </div>
 </th:block>
+<script>
+    $(document).ready(function(){
+        $("#tableSearch").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
