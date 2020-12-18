@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 public class Symptom {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
