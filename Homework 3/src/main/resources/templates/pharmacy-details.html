@@ -5,16 +5,24 @@
             <!-- Portfolio Item Row -->
             <div class="row detali">
                 <div class="col-md-4">
-                    <h3 class="my-3" th:text="${pharmacy.getTitle()}"></h3>
+                    <h2 class="my-3" th:text="${pharmacy.getTitle()}"></h2>
                     <ul>
-                        <li class="lista-element" th:text="${pharmacy.getAddress()}">Адреса: </li>
-                        <li class="lista-element" th:text="${pharmacy.getPhoneNumber()}">Телефонски број: </li>
+                        <li class="lista-element" th:text="${pharmacy.getAddress()}">Address:</li>
+                        <li class="lista-element"
+                            th:text="${pharmacy.getPhoneNumber() != null} ? ${pharmacy.getPhoneNumber()} : 'No information available'">
+                            Phone number:
+                        </li>
                         <!--                        <li class="lista-element" th:text="${pharmacy.getWorkingHours()}">Работно време: </li>-->
-                        <li class="lista-element" th:text="${pharmacy.getRating()}">Рејтинг: </li>
+                        <li class="lista-element"
+                            th:text="${pharmacy.getRating() != null} ? ${pharmacy.getRating()} : 'No information available'">
+                            Рејтинг:
+                        </li>
                     </ul>
-                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Назад"
+                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Back"
                        th:href="@{'/pharmacies'}"></a>
-                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Пронајди пат</button>
+                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">
+                        Find route from current location
+                    </button>
                 </div>
 
                 <div class="col-md-8">
@@ -30,10 +38,10 @@
                                     checked="checked"/>
                             <label for="changemode-walking">Walking</label>
 
-                            <input type="radio" name="type" id="changemode-transit" />
+                            <input type="radio" name="type" id="changemode-transit"/>
                             <label for="changemode-transit">Transit</label>
 
-                            <input type="radio" name="type" id="changemode-driving" />
+                            <input type="radio" name="type" id="changemode-driving"/>
                             <label for="changemode-driving">Driving</label>
                         </div>
                         <div id="right-panel"></div>
@@ -47,16 +55,16 @@
 </th:block>
 <script>
     var start;
+
     function initMap() {
         const directionsRenderer = new google.maps.DirectionsRenderer();
         const directionsService = new google.maps.DirectionsService();
         const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
-            center: { lat: 41.9981, lng: 21.4254 },
+            center: {lat: 41.9981, lng: 21.4254},
         });
         directionsRenderer.setMap(map);
         directionsRenderer.setPanel(document.getElementById("right-panel"));
-
 
 
         document.getElementById("changemode-walking").addEventListener("click", () => {
@@ -114,7 +122,7 @@
     function calculateAndDisplayRoute(directionsService, directionsRenderer, startPos, mode) {
         const latEnd = parseFloat(document.getElementById("latEnd").value);
         const lngEnd = parseFloat(document.getElementById("lngEnd").value);
-        const end = new google.maps.LatLng( latEnd, lngEnd);
+        const end = new google.maps.LatLng(latEnd, lngEnd);
 
         directionsService.route(
             {

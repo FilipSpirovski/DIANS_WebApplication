@@ -7,14 +7,14 @@
                 <div class="col-md-4">
                     <h3 class="my-3" th:text="${clinic.getTitle()}"></h3>
                     <ul>
-                        <li class="lista-element" th:text="'Адреса: ' + ${clinic.getAddress()}">Адреса: </li>
-                        <li class="lista-element" th:text="'Телефонски број: ' + ${clinic.getPhoneNumber()}"></li>
+                        <li class="lista-element" th:text="'Address: ' + ${clinic.getAddress()}">Address: </li>
+                        <li class="lista-element" th:text="'Phone number: ' + ${clinic.getPhoneNumber()}"></li>
                         <!--                        <li class="lista-element" th:text="${clinic.getWorkingHours()}">Работно време: </li>-->
-                        <li class="lista-element" th:text="'Рејтинг: ' + ${clinic.getRating()}"></li>
+                        <li class="lista-element" th:text="'Rating: ' + ${clinic.getRating()}"></li>
                     </ul>
-                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Назад"
-                       th:href="@{'/clinics'}"></a>
-                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Пронајди пат</button>
+                    <a class="btn btn-outline-secondary button1 bt1 kopce-detali back"
+                       th:href="@{'/clinics'}">Back</a>
+                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Find route from current location</button>
                 </div>
 
                 <div class="col-md-8">

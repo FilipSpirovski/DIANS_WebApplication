@@ -8,7 +8,7 @@
                     <th:block th:text="${disease.getDescription()}"></th:block>
                 </div>
                 <div class="col-md-6">
-                    <h3 class="my-3">Симптоми</h3>
+                    <h3 class="my-3">Symptoms</h3>
                     <ul>
                         <li th:each="symptom: ${disease.getSymptoms()}"
                             th:text="${symptom.getDescription()}">
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="row">
-                <h3 class="my-3">Споделени искуства од други корисници</h3>
+                <h3 class="my-3">Shared experiences from other users</h3>
                 <ul>
                     <li th:each="comment: ${top5Comments}"
                         th:text="${comment.getDescription()}">
@@ -27,7 +27,7 @@
             <div class="row">
                 <form action="/comments/add-comment" method="POST">
                     <div class="md-form mb-4 pink-textarea active-pink-textarea">
-                        <label for="form18">Споделете искуство...</label>
+                        <label for="form18">Your experience...</label>
                         <textarea id="form18" name="description" class="md-textarea form-control" rows="3"></textarea>
                     </div>
                     <input type="hidden" name="diseaseId">
