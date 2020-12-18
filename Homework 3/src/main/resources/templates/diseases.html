@@ -34,7 +34,7 @@
                     <a class="no-link-color" th:text="${disease.getName()}"
                        th:href="@{'/diseases/{diseaseId}' (diseaseId=${disease.getId()})}"></a>
                 </td>
-                <td th:text="${disease.getDescription()}"></td>
+                <td th:text="${#strings.abbreviate(disease.getDescription(),75)}"></td>
             </tr>
             </tbody>
         </table>

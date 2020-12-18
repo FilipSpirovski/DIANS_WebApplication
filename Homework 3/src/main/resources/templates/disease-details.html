@@ -1,11 +1,11 @@
 <th:block xmlns:th="http://www.thymeleaf.org">
     <div class="main">
-        <div class="container cont-detali">
+        <div class="container cont-detali" style="display: flex; justify-content: center; align-items: center">
             <!-- Portfolio Item Row -->
             <div class="row detali">
                 <div class="col-md-6">
                     <h2 class="my-3" th:text="${disease.getName()}"></h2>
-                    <th:block th:text="${disease.getDescription().substring(0, 20)}"></th:block>
+                    <th:block th:text="${disease.getDescription()}"></th:block>
                 </div>
                 <div class="col-md-6">
                     <h3 class="my-3">Symptoms</h3>
@@ -16,23 +16,47 @@
                     </ul>
                 </div>
             </div>
+
+        </div>
+        <div class="container" style="background: #93d8f7">
             <div class="row">
-                <h3 class="my-3">Shared experiences from other users</h3>
-                <ul>
-                    <li th:each="comment: ${top5Comments}"
-                        th:text="${comment.getDescription()}">
-                    </li>
-                </ul>
+                <div class="" style="margin: auto">
+                    <div class="container py-5">
+                        <div class="row mb-4" style="justify-content: center">
+                            <div>
+                                <h3>Shared experiences from other people</h3>
+                            </div>
+                        </div>
+
+                        <div class="row text-center" style="justify-content: space-between">
+                            <!-- Team item-->
+                            <div th:each="comment: ${top3Comments}" class="col-xl-4 col-sm-6 mb-5">
+                                <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                                        src="/unknown.png" alt=""
+                                        width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                    <h5 class="mb-0">Unknown</h5>
+                                    <span class="small text-uppercase text-muted" th:text="${comment.getDescription()}"></span>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <form action="/comments/add-comment" method="POST" style="width: 68%; margin: auto">
+                    <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                        <label for="form18">Your experience...</label>
+                        <textarea id="form18" name="description" class="md-textarea form-control" rows="3"></textarea>
+                    </div>
+                    <input type="hidden" th:value="${disease.getId()}" name="diseaseId">
+                    <button class="btn btn-dark" type="submit" style="width: 100%; margin-bottom: 5%">Submit</button>
+                </form>
             </div>
         </div>
-        <div class="container">
-            <form action="/comments/add-comment" method="POST">
-                <div class="md-form mb-4 pink-textarea active-pink-textarea">
-                    <label for="form18">Your experience...</label>
-                    <textarea id="form18" name="description" class="md-textarea form-control" rows="3"></textarea>
-                </div>
-                <input type="hidden" name="diseaseId">
-            </form>
-        </div>
+
     </div>
 </th:block>

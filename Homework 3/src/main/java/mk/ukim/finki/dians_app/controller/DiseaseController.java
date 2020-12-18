@@ -44,12 +44,12 @@ public class DiseaseController {
     @GetMapping("/{diseaseId}")
     public String getDiseaseById(@PathVariable Long diseaseId, Model model) {
         Disease disease = this.diseaseService.findById(diseaseId);
-        List<Comment> top5Comments = disease.getComments().stream()
+        List<Comment> top3Comments = disease.getComments().stream()
                 .sorted()
-                .limit(5)
+                .limit(3)
                 .collect(Collectors.toList());
         model.addAttribute("disease", disease);
-        model.addAttribute("top5Comments", top5Comments);
+        model.addAttribute("top3Comments", top3Comments);
         model.addAttribute("bodyContent", "disease-details");
 
         return "master-template";

@@ -5,15 +5,15 @@
             <!-- Portfolio Item Row -->
             <div class="row detali">
                 <div class="col-md-4">
-                    <h2 class="my-3" th:text="${pharmacy.getTitle()}"></h2>
+                    <h4 class="my-3" th:text="${pharmacy.getTitle()}" style="text-align: center"></h4>
                     <ul>
                         <li class="lista-element" th:text="'Address: ' + ${pharmacy.getAddress()}"></li>
                         <li class="lista-element"
-                            th:text="'Phone number: ' + ${pharmacy.getPhoneNumber() != null} ? ${pharmacy.getPhoneNumber()} : 'No information available'">
+                            th:text="'Phone number: ' + (${pharmacy.getPhoneNumber() != 'null'} ? ${pharmacy.getPhoneNumber()} : 'No information available')">
                         </li>
                         <!--                        <li class="lista-element" th:text="${pharmacy.getWorkingHours()}">Работно време: </li>-->
                         <li class="lista-element"
-                            th:text="'Rating: ' + ${pharmacy.getRating() != null} ? ${pharmacy.getRating()} : 'No information available'">
+                            th:text="'Rating: ' + (${pharmacy.getRating() != 'null'} ? ${pharmacy.getRating()} : 'No information available')">
                         </li>
                     </ul>
                     <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Back"
@@ -97,14 +97,30 @@
                             start, google.maps.TravelMode.WALKING);
                     },
                     () => {
+                        addMarker(map);
                         handleLocationError(true, infoWindow, map.getCenter());
                     }
                 );
             } else {
                 // Browser doesn't support Geolocation
+                addMarker(map);
                 handleLocationError(false, infoWindow, map.getCenter());
             }
         });
+    }
+
+    function addMarker(map) {
+        const latEnd = parseFloat(document.getElementById("latEnd").value);
+        const lngEnd = parseFloat(document.getElementById("lngEnd").value);
+        const pos = new google.maps.LatLng(latEnd, lngEnd);
+
+        const marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            title: "Click to zoom"
+        });
+        map.setCenter(marker.getPosition());
+        map.setZoom(15);
     }
 
     function handleLocationError(browserHasGeolocation, infoWindow, pos) {

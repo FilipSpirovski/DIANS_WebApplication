@@ -33,6 +33,6 @@ public class Comment implements Comparable<Comment> {
 
     @Override
     public int compareTo(Comment o) {
-        return this.published.compareTo(o.published);
+        return (-1) * this.published.compareTo(o.published);
     }
 }
