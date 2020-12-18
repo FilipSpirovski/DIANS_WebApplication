@@ -5,16 +5,20 @@
             <!-- Portfolio Item Row -->
             <div class="row detali">
                 <div class="col-md-4">
-                    <h3 class="my-3" th:text="${clinic.getTitle()}"></h3>
+                    <h2 class="my-3" th:text="${clinic.getTitle()}"></h2>
                     <ul>
-                        <li class="lista-element" th:text="'Address: ' + ${clinic.getAddress()}">Address: </li>
-                        <li class="lista-element" th:text="'Phone number: ' + ${clinic.getPhoneNumber()}"></li>
+                        <li class="lista-element"
+                            th:text="'Address: ' + ${clinic.getAddress()}"></li>
+                        <li class="lista-element"
+                            th:text="'Phone number: ' + ${clinic.getPhoneNumber() != null} ? ${pharmacy.getPhoneNumber()} : 'No information available'"></li>
                         <!--                        <li class="lista-element" th:text="${clinic.getWorkingHours()}">Работно време: </li>-->
-                        <li class="lista-element" th:text="'Rating: ' + ${clinic.getRating()}"></li>
+                        <li class="lista-element"
+                            th:text="'Rating: '  + ${clinic.getRating() != null} ? ${clinic.getRating()} : 'No information available'">
+                        </li>
                     </ul>
                     <a class="btn btn-outline-secondary button1 bt1 kopce-detali back"
                        th:href="@{'/clinics'}">Back</a>
-                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Find route from current location</button>
+                    <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">Find route</button>
                 </div>
 
                 <div class="col-md-8">

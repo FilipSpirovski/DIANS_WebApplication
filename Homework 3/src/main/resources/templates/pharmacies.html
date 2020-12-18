@@ -15,7 +15,7 @@
                 <td>
                     <a class="no-link-color"  th:text="${pharmacy.getTitle()}" th:href="@{'/pharmacies/{id}' (id=${pharmacy.getId()})}"></a>
                 </td>
-                <!--                <td th:text="${pharmacy.getWorkingHours() != null} ? ${pharmacy.getWorkingHours()} : 'Нема податоци'"></td>-->
+                <td th:text="${pharmacy.getSunday() == 'Open 24 hours'} ? 'Yes' : 'No'"></td>
                 <td th:text="${pharmacy.getAddress() != null} ? ${pharmacy.getAddress()} : 'No information available'"></td>
             </tr>
             </tbody>

@@ -7,21 +7,19 @@
                 <div class="col-md-4">
                     <h2 class="my-3" th:text="${pharmacy.getTitle()}"></h2>
                     <ul>
-                        <li class="lista-element" th:text="${pharmacy.getAddress()}">Address:</li>
+                        <li class="lista-element" th:text="'Address: ' + ${pharmacy.getAddress()}"></li>
                         <li class="lista-element"
-                            th:text="${pharmacy.getPhoneNumber() != null} ? ${pharmacy.getPhoneNumber()} : 'No information available'">
-                            Phone number:
+                            th:text="'Phone number: ' + ${pharmacy.getPhoneNumber() != null} ? ${pharmacy.getPhoneNumber()} : 'No information available'">
                         </li>
                         <!--                        <li class="lista-element" th:text="${pharmacy.getWorkingHours()}">Работно време: </li>-->
                         <li class="lista-element"
-                            th:text="${pharmacy.getRating() != null} ? ${pharmacy.getRating()} : 'No information available'">
-                            Рејтинг:
+                            th:text="'Rating: ' + ${pharmacy.getRating() != null} ? ${pharmacy.getRating()} : 'No information available'">
                         </li>
                     </ul>
                     <a class="btn btn-outline-secondary button1 bt1 kopce-detali back" th:text="Back"
                        th:href="@{'/pharmacies'}"></a>
                     <button class="btn btn-outline-secondary button1 bt1 kopce-detali" id="search-route">
-                        Find route from current location
+                        Find route
                     </button>
                 </div>
 
