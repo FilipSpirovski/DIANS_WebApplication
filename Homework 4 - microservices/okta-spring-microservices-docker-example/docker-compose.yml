@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+
+  database:
+    image: 'postgres:13.1-alpine'
+    container_name: database-container
+    environment:
+      - POSTGRES_DB=d2bh038qqi8s04
+      - POSTGRES_USER=xirfxkwdgzymie
+      - POSTGRES_PASSWORD=5b11d489fe9cc38ea066acfbc0763077858a9f2cee4f739b24be3a54270560e1
+    networks:
+      default:
+
+  forum-service:
+    image: helpisontheway.azurecr.io/forum-service:0.0.1-SNAPSHOT
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://ec2-54-166-114-48.compute-1.amazonaws.com:5432/d2bh038qqi8s04
+      - SPRING_DATASOURCE_USERNAME=xirfxkwdgzymie
+      - SPRING_DATASOURCE_PASSWORD=5b11d489fe9cc38ea066acfbc0763077858a9f2cee4f739b24be3a54270560e1
+    depends_on:
+      - database
+    ports:
+      - 9092:9092
+    networks:
+      default:
+        aliases:
+          - forumapi
+
+  clinic-pharmacy-service:
+    image: helpisontheway.azurecr.io/clinic-pharmacy-service:0.0.1-SNAPSHOT
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://ec2-54-166-114-48.compute-1.amazonaws.com:5432/d2bh038qqi8s04
+      - SPRING_DATASOURCE_USERNAME=xirfxkwdgzymie
+      - SPRING_DATASOURCE_PASSWORD=5b11d489fe9cc38ea066acfbc0763077858a9f2cee4f739b24be3a54270560e1
+    depends_on:
+      - database
+    ports:
+      - 9091:9091
+    networks:
+      default:
+        aliases:
+          - clinicpharmacyapi
+
+  angular-frontend:
+    image: helpisontheway.azurecr.io/angular-frontend-image
+    ports:
+      - 4200:80
+    networks:
+      default:
+    depends_on:
+      - forum-service
+      - clinic-pharmacy-service
